@@ -1,0 +1,277 @@
+{
+  "catalog_models": [
+    "ideogram-v3-character-edit",
+    "ideogram-v3-edit",
+    "ideogram-v3-reframe",
+    "ideogram-v3-character-remix",
+    "ideogram-v3-remix",
+    "ideogram-v3-character",
+    "ideogram-v3-text-to-image"
+  ],
+  "actions": {
+    "ideogram-v3/edit-image": {
+      "model": "Ideogram V3",
+      "endpoint": "edit_image",
+      "models": [
+        "ideogram-v3-character-edit",
+        "ideogram-v3-edit"
+      ],
+      "fields_by_model": {
+        "ideogram-v3-character-edit": {
+          "style": {
+            "enum": [
+              "auto",
+              "realistic",
+              "fiction"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          },
+          "source_image_url": {
+            "required": true
+          }
+        },
+        "ideogram-v3-edit": {
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          },
+          "source_image_url": {
+            "required": true
+          }
+        }
+      }
+    },
+    "ideogram-v3/reframe-image": {
+      "model": "Ideogram V3",
+      "endpoint": "reframe_image",
+      "models": [
+        "ideogram-v3-reframe"
+      ],
+      "fields_by_model": {
+        "ideogram-v3-reframe": {
+          "style": {
+            "enum": [
+              "auto",
+              "general",
+              "realistic",
+              "design"
+            ]
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:4",
+              "9:16",
+              "4:3",
+              "16:9"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          },
+          "source_image_url": {
+            "required": true
+          }
+        }
+      }
+    },
+    "ideogram-v3/remix-image": {
+      "model": "Ideogram V3",
+      "endpoint": "remix_image",
+      "models": [
+        "ideogram-v3-character-remix",
+        "ideogram-v3-remix"
+      ],
+      "fields_by_model": {
+        "ideogram-v3-character-remix": {
+          "style": {
+            "enum": [
+              "auto",
+              "realistic",
+              "fiction"
+            ]
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:4",
+              "9:16",
+              "4:3",
+              "16:9"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          },
+          "source_image_url": {
+            "required": true
+          },
+          "style_reference_image_urls": {}
+        },
+        "ideogram-v3-remix": {
+          "style": {
+            "enum": [
+              "auto",
+              "general",
+              "realistic",
+              "design"
+            ]
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:4",
+              "9:16",
+              "4:3",
+              "16:9"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          },
+          "source_image_url": {
+            "required": true
+          }
+        }
+      }
+    },
+    "ideogram-v3/text-to-image": {
+      "model": "Ideogram V3",
+      "endpoint": "text_to_image",
+      "models": [
+        "ideogram-v3-character",
+        "ideogram-v3-text-to-image"
+      ],
+      "fields_by_model": {
+        "ideogram-v3-character": {
+          "style": {
+            "enum": [
+              "auto",
+              "realistic",
+              "fiction"
+            ]
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:4",
+              "9:16",
+              "4:3",
+              "16:9"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          }
+        },
+        "ideogram-v3-text-to-image": {
+          "style": {
+            "enum": [
+              "auto",
+              "general",
+              "realistic",
+              "design"
+            ]
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:4",
+              "9:16",
+              "4:3",
+              "16:9"
+            ]
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "rendering_speed": {
+            "enum": [
+              "turbo",
+              "balanced",
+              "quality"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

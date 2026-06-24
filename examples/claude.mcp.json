@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ideogram-v3": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@runapi.ai/ideogram-v3-mcp"
+      ],
+      "env": {
+        "RUNAPI_API_KEY": "${RUNAPI_API_KEY}"
+      }
+    }
+  }
+}

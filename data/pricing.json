@@ -1,0 +1,81 @@
+{
+  "endpoints": {
+    "ideogram-v3-character-edit/edit_image": {
+      "unit_price_cents": 18,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 12,
+          "balanced": 18,
+          "quality": 24
+        }
+      }
+    },
+    "ideogram-v3-edit/edit_image": {
+      "unit_price_cents": 7,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 3.5,
+          "balanced": 7,
+          "quality": 10
+        }
+      }
+    },
+    "ideogram-v3-reframe/reframe_image": {
+      "unit_price_cents": 7,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 3.5,
+          "balanced": 7,
+          "quality": 10
+        }
+      }
+    },
+    "ideogram-v3-character-remix/remix_image": {
+      "unit_price_cents": 18,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 12,
+          "balanced": 18,
+          "quality": 24
+        }
+      }
+    },
+    "ideogram-v3-remix/remix_image": {
+      "unit_price_cents": 7,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 3.5,
+          "balanced": 7,
+          "quality": 10
+        }
+      }
+    },
+    "ideogram-v3-character/text_to_image": {
+      "unit_price_cents": 18,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 12,
+          "balanced": 18,
+          "quality": 24
+        }
+      }
+    },
+    "ideogram-v3-text-to-image/text_to_image": {
+      "unit_price_cents": 7,
+      "billing_config": {
+        "key": "rendering_speed",
+        "overrides": {
+          "turbo": 3.5,
+          "balanced": 7,
+          "quality": 10
+        }
+      }
+    }
+  }
+}
