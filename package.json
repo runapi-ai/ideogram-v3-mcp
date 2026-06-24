@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/ideogram-v3-mcp",
-  "version": "0.1.0",
-  "description": "RunAPI MCP server for one model line: create tasks, poll status, and check pricing with one API key.",
+  "version": "0.1.1",
+  "description": "Ideogram V3 MCP server for RunAPI — create Ideogram V3 AI tasks (edit image, reframe image, remix image), poll status, and check pricing across 7 models with one API key.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -27,7 +27,17 @@
     "runapi",
     "mcp",
     "model-context-protocol",
-    "ai"
+    "ai",
+    "ideogram-v3",
+    "ideogram-v3-mcp",
+    "ideogram-v3-ai",
+    "ideogram-v3-api",
+    "image-generation",
+    "ai-image",
+    "edit-image",
+    "reframe-image",
+    "remix-image",
+    "text-to-image"
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
