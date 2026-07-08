@@ -45,7 +45,7 @@ describe("ideogram-v3 stdio MCP server", () => {
 
     const tools = await client.listTools();
     const names = tools.tools.map((tool) => tool.name).sort();
-    expect(names).toEqual(["check_pricing","edit_image","get_task","reframe_image","remix_image","text_to_image"]);
+    expect(names).toEqual(["check_pricing","edit_image","get_task","login","reframe_image","remix_image","text_to_image"]);
 
     const pricing = await client.callTool({ name: "check_pricing", arguments: {} });
     const content = pricing.content?.[0];
