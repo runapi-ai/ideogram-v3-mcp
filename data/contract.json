@@ -39,7 +39,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
@@ -93,7 +94,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string"
@@ -154,7 +156,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
@@ -209,7 +212,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
@@ -281,7 +285,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
@@ -360,7 +365,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
@@ -419,7 +425,8 @@
               "turbo",
               "balanced",
               "quality"
-            ]
+            ],
+            "default": "balanced"
           },
           "style": {
             "type": "string",
