@@ -13,7 +13,7 @@
   <a href="https://github.com/runapi-ai/ideogram-v3-mcp"><img src="https://img.shields.io/badge/GitHub-runapi--ai%2Fideogram--v3--mcp-24292f?style=flat-square" alt="GitHub repository"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square" alt="Apache-2.0 license"></a>
   <img src="https://img.shields.io/badge/Type-MCP_Server-blue?style=flat-square" alt="MCP Server">
-  <img src="https://img.shields.io/badge/Models-7-16a34a?style=flat-square" alt="7 models">
+  <img src="https://img.shields.io/badge/Models-6-16a34a?style=flat-square" alt="6 models">
 </p>
 
 <p align="center">
@@ -30,9 +30,11 @@
 ## Why This Package?
 
 `@runapi.ai/ideogram-v3-mcp` is a focused Model Context Protocol server for the **Ideogram V3** model line on RunAPI.
-It gives MCP-compatible assistants direct access to 4 endpoints and 7 model variants without loading the full RunAPI catalog.
+It gives MCP-compatible assistants direct access to 3 endpoints and 6 model variants without loading the full RunAPI catalog.
 
 Use this per-model server when an agent should stay scoped to Ideogram V3. Use [`@runapi.ai/mcp`](https://github.com/runapi-ai/mcp) when one assistant should discover every RunAPI model line.
+
+`ideogram-v3-reframe` was retired on 2026-10-11T00:00:00Z. New requests return HTTP 410 before task creation or balance deduction. Existing tasks can still be queried. This model ID is not mapped to another model.
 
 ---
 
@@ -75,7 +77,6 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 | Tool | Auth | Purpose |
 |---|---|---|
 | `edit_image` | Yes | Create an Ideogram V3 edit image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
-| `reframe_image` | Yes | Create an Ideogram V3 reframe image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `remix_image` | Yes | Create an Ideogram V3 remix image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `text_to_image` | Yes | Create an Ideogram V3 text to image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `get_task` | Yes | Fetch the current status and latest payload for an existing task. |
@@ -85,12 +86,11 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 
 ## Models
 
-Ideogram V3 covers 7 model variants across 4 endpoints. Each tool accepts the models listed for it:
+Ideogram V3 covers 6 model variants across 3 endpoints. Each tool accepts the models listed for it:
 
 | Tool | Models |
 |---|---|
 | `edit_image` | `ideogram-v3-character-edit`, `ideogram-v3-edit` |
-| `reframe_image` | `ideogram-v3-reframe` |
 | `remix_image` | `ideogram-v3-character-remix`, `ideogram-v3-remix` |
 | `text_to_image` | `ideogram-v3-character`, `ideogram-v3-text-to-image` |
 

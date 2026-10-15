@@ -2,7 +2,6 @@
   "catalog_models": [
     "ideogram-v3-character-edit",
     "ideogram-v3-edit",
-    "ideogram-v3-reframe",
     "ideogram-v3-character-remix",
     "ideogram-v3-remix",
     "ideogram-v3-character",
@@ -60,7 +59,8 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
@@ -110,75 +110,14 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
           },
           "reference_image_urls": {
             "type": "array"
-          },
-          "callback_url": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    "ideogram-v3/reframe-image": {
-      "model": "Ideogram V3",
-      "endpoint": "reframe_image",
-      "task_type": "asynchronous",
-      "models": [
-        "ideogram-v3-reframe"
-      ],
-      "fields_by_model": {
-        "ideogram-v3-reframe": {
-          "model": {
-            "type": "string"
-          },
-          "source_image_url": {
-            "type": "string",
-            "required": true
-          },
-          "aspect_ratio": {
-            "type": "string",
-            "enum": [
-              "1:1",
-              "3:4",
-              "9:16",
-              "4:3",
-              "16:9"
-            ]
-          },
-          "rendering_speed": {
-            "type": "string",
-            "enum": [
-              "turbo",
-              "balanced",
-              "quality"
-            ],
-            "default": "balanced"
-          },
-          "style": {
-            "type": "string",
-            "enum": [
-              "auto",
-              "general",
-              "realistic",
-              "design"
-            ]
-          },
-          "output_count": {
-            "type": "integer",
-            "enum": [
-              1,
-              2,
-              3,
-              4
-            ]
-          },
-          "seed": {
-            "type": "integer"
           },
           "callback_url": {
             "type": "string"
@@ -243,7 +182,8 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
@@ -317,7 +257,8 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
@@ -396,7 +337,8 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
@@ -457,7 +399,8 @@
               2,
               3,
               4
-            ]
+            ],
+            "default": 1
           },
           "seed": {
             "type": "integer"
@@ -473,6 +416,17 @@
           }
         }
       }
+    }
+  },
+  "retired_models": {
+    "ideogram-v3": {
+      "provider": "Ideogram",
+      "versions": [
+        {
+          "id": "ideogram-v3-reframe",
+          "retired_at": "2026-10-11T00:00:00Z"
+        }
+      ]
     }
   }
 }
