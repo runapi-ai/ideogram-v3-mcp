@@ -1,5 +1,5 @@
 export const META = {
   name: "@runapi.ai/ideogram-v3-mcp",
-  version: "0.3.0",
+  version: "0.3.1",
   lineSlug: "ideogram-v3"
 } as const;
